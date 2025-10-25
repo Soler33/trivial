@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrivialCoches.MainPage"
+             Title="Trivial de Coches">
+
+    <Grid>
+        <Image Source="fondo_coches.jpg"
+               Aspect="AspectFill" />
+
+        <BoxView Color="Black"
+                 Opacity="0.4" />
+        
+        <VerticalStackLayout Spacing="30"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Padding="40">
+
+            <Label Text="TRIVIAL DE COCHES"
+                   FontSize="36"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   Shadow="{Shadow Brush=Black, Offset='2,2', Radius=5, Opacity=0.8}" />
+
+            <Label Text="¿Cuánto sabes de coches?"
+                   FontSize="18"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,0,0,30" />
+
+            <Button Text="Adivina el Coche"
+                    Clicked="OnCochesClicked"
+                    BackgroundColor="#FF6B35"
+                    TextColor="White"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    WidthRequest="300"
+                    HeightRequest="60"
+                    CornerRadius="15"
+                    Shadow="{Shadow Brush=Black, Offset='0,4', Radius=8, Opacity=0.5}" />
+
+            <Button Text="Adivina el Logo"
+                    Clicked="OnLogosClicked"
+                    BackgroundColor="#004E89"
+                    TextColor="White"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    WidthRequest="300"
+                    HeightRequest="60"
+                    CornerRadius="15"
+                    Shadow="{Shadow Brush=Black, Offset='0,4', Radius=8, Opacity=0.5}" />
+
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>
